@@ -11,7 +11,26 @@
     <div class="container">
         <div class="navbar">
             <h2>Libary</h2>
-        <button>Add book</button>
+        <button id="modalBtn">Add book</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <form>
+                    <input type="text" placeholder="Title" required>
+                    <input type="text" placeholder="Author" required>
+                    <input type="text" placeholder="Pages" required>
+                    <div class="isRead">
+                    <label for="isRead">Have you read it?</label>
+                    <input type="checkbox" id="isRead">
+                    </div>
+                    <button type="submit" id="createBtn">Submit</button>
+
+                </form>
+                
+                <span class="close">&times;</span>
+            </div>
+        </div>
+
         </div>
     </div>
     
