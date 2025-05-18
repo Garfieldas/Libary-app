@@ -13,6 +13,8 @@ closeBtn.onclick = () => {
 const myLibary = [];
 
 function Book(title, author, pages, status) {
+    
+    this.id = crypto.randomUUID
     this.title = title
     this.author = author
     this.pages = pages
@@ -26,7 +28,13 @@ function addBookToLibary(title, author, pages, status)
     renderBook()
 }
 
+addBookToLibary('Tom', 'Jerry', 100, false)
+addBookToLibary('Tom2', 'Jerry2', 101, false)
+addBookToLibary('Tom3', 'Jerry3', 102, true)
+
+
 function renderBook() {
+    console.clear()
     myLibary.forEach(book => {
         console.log(book)
     });
