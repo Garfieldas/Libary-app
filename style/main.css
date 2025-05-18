@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap');
+
+:root {
+    --nav-color: #3D365C;
+    --text-color: #FFFFFF;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titan One", sans-serif;
+}
+
+.container {
+    font-size: 1.5rem;
+    height: 70px;
+    background-color: var(--nav-color);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    color: var(--text-color);
+}
